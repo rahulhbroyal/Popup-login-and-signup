@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Login/Signup Popup</title>
+</head>
+<body>
+  <button id="openPopupButton">Click on welcome 🚀</button>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <button id="closePopupButton" class="close-button">×</button>
+      </div>
+      <div class="popup-footer">
+        <button id="switchToLogin">Log In</button>
+        <button id="switchToSignup">SignUp</button>
+      </div><br>
+      <div class="popup-forms">
+        <form id="loginForm" class="form">
+         
+          
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required >
+            <br>
+            
+            <input type="password" id="loginPassword" name="loginPassword"  placeholder=" Enter your password" required>
+            <span id="loginvisibilty" class="password-toggle">👁️‍🗨️</span>
+
+            <br>
+            <label>
+                <input type="checkbox" name="Remember me" id="rememberme">
+                Remember me
+              </label><br><br>
+            <button id="loginSubmit">Login</button>
+            <p>Don't have account?<a href="">SignUp</a></p>
+       
+        </form>
+        <form id="signupForm" class="form-hidden">
+    
+            
+            <input type="type" id="signupFullName" name="signupFullName"  placeholder=" Enter your full name"required><br>
+
+            <input type="email" id="signupEmail" name="signupEmail"  placeholder=" Enter your email" required><br>
+
+            <input type="tel" id="signupPhoneNumber" name="signupPhoneNumber" placeholder="Enter your phone number" required>
+
+            
+            <input type="password" id="signupPassword" name="signupPassword" placeholder="Enter your password" required>
+            <span id="passwordVisibilityToggle" class="password-toggle">👁️‍🗨️</span>
+
+            <input type="password" id="confirmSignupPassword" name="confirmSignupPassword" placeholder=" Confrim your password"required>
+            <span id="confirmPasswordVisibilityToggle" class="password-toggle">👁️‍🗨️</span>
+
+            <p id="passwordLengthError" style="display: none; color: red;">Password must be at least 8 characters long.</p>
+
+          
+            <p id="passwordError" style="display: none; color: red;">Passwords don't match</p>
+
+            <button id="signupSubmit">Sign Up</button>
+
+            <p>Already have an account?<a href="">SignUp</a></p>
+          
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</body>
+</html>
